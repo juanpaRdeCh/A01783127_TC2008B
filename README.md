@@ -37,11 +37,12 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Repositorio de Tareas</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    TC2005B - A01783127 - Tecnologico de Monterrey
     <br />
+    <!--
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -50,6 +51,7 @@
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    -->
   </p>
 </div>
 
