@@ -67,6 +67,7 @@
         <li><a href="Reto">Reto</a></li>
       </ul>
     </li>
+    <a href="#Contenidos de aprendizaje">Contenidos de aprendizaje</a>
     <li>
   </ol>
 </details>
@@ -321,6 +322,8 @@ Construir un simulador computacional que reproduzca el comportamiento parcial de
 
 8.10.2 Licencias de software.
 
+<!--
+
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
@@ -466,3 +469,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+-->
