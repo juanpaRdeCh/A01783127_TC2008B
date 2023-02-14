@@ -64,7 +64,7 @@
     <li>
       <a href="#about-the-project">Acerca del proyecto</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="Reto">Built With</a></li>
       </ul>
     </li>
     <li>
@@ -74,37 +74,19 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Acerca del proyecto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Este repositorio tiene como propósito almacenar las tareas realizadas en la clase de construcción de software y toma de decisiones de manera pública. Esto falicitará el acceso a los documentos y resultará en una mejor organización de los archivos para futuros trabajos.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-### Built With
+### Reto
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Simuladores Computacionales
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+Construir un simulador computacional que reproduzca el comportamiento parcial de un sistema empresarial, económico, social, político, educativo. Este simulador permitirá el análisis de escenarios actuales o futuros para el apoyo en la toma de decisiones hacia la mejora de alguno de los procesos, o componentes del sistema. El simulador tendrá una interfaz gráfica equiparable a un videojuego 2D o 3D.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
