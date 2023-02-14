@@ -18,13 +18,14 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+<!--
 ***[![Contributors][contributors-shield]][contributors-url]
 ***[![Forks][forks-shield]][forks-url]
 ***[![Stargazers][stars-shield]][stars-url]
 ***[![Issues][issues-shield]][issues-url]
 ***[![MIT License][license-shield]][license-url]
 ***[![LinkedIn][linkedin-shield]][linkedin-url]
-
+-->
 
 
 <!-- PROJECT LOGO -->
@@ -39,6 +40,7 @@
   <p align="center">
     Clase TC2005B - A01783127 - Repositorio público de tareas
     <br />
+    <!--
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -47,6 +49,7 @@
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    -->
   </p>
 </div>
 
