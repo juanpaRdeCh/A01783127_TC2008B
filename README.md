@@ -60,7 +60,6 @@
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Tabla de contenidos</summary>
-  <ol>
     <li>
       <a href="#about-the-project">Acerca del proyecto</a>
       <ul>
