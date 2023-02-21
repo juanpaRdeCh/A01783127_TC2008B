@@ -70,5 +70,167 @@
     <p> La etiqueta strike sirve para tachar un fragmento de texto en un parrafo. Ejemplo:</p>
     <p> Aqui vemos la etiqueta de <strike>tachado</strike> en accion</p>
     <h2> small - Pequeño</h2>
-    <p> El tag "small"</p>
+    <p> El tag "small" funciona para cambiar el tamaño de fuente de un texto como en el siguiente ejemplo:</p>
+    <p>Aqui obstervamos como se cambia esta fuente mediana a <small>Fuente pequeña</small></p>
+    <h2>em - enfasis</h2>
+    <p>Este tag sirve para crear enfasis en un fragmento de texto ya que este mismo funciona en linea. Ejemplo:</p>
+    <p>Necesitamos crear <em>enfasis</em> en ciertas palabras</p>
+    <h2>header - encabezados</h2>
+    <p>El tag header crea un encabezado en el documento html, este funciona en bloque. Ejemplo:</p>
+    <header>
+        <h2>Prueba de encabezado</h2>
+        <p>Actividad HTML Cheat Sheet - TC2005B.401 |  
+            <a href="https://experiencia21.tec.mx/courses/350633/assignments/11630260?return_to=https%3A%2F%2Fexperiencia21.tec.mx%2Fcalendar%23view_name%3Dmonth%26view_start%3D2023-02-20">Enlace de actividad</a> |</p>
+    </header>
+    <p>En este apartado se suele poner todo el metadata del sitio</p>
 </html>
+<h2>section - Seccion</h2>
+<p>El tag section basicamente funciona como el tag div, sin embargo este si tiene un proposito semantico,
+    a diferencia de div que es un contenedor generico.
+</p>
+<section style=color:#ff0672>
+    <p>
+    Este parrado de texto se encuentra en color rosa en lugar del negro por defecto
+    </p>
+    <p>
+        Este segundo parrrafo se encuentra agrupado dentro de la misma seccion del primero por lo que 
+        sigue estando escrito en color rosa
+    </p>
+</section>
+<h2>article - articulo</h2>
+<p>Este tag funciona muy similar a div y a section. Este tambien tiene una estructura semantica
+    y puede ser manipulado con CSS para darle un aspecto original. Ejemplo:
+</p>
+<style>
+    .cajaGrande {
+      margin: 0;
+      padding: 5px;
+      background-color: rgb(96, 199, 251);
+    }
+    .cajaGrande > h1, .cajaChica {
+      margin: 10px;
+      padding: 5px;
+    }
+    .cajaChica {
+      background: rgb(233, 228, 228);
+    }
+    .cajaChica > h2, p {
+      margin: 4px;
+      font-size: 90%;
+    }
+    </style>
+    <article class="cajaGrande">
+      <h1>Ejemplo de uso articulo con CSS</h1>
+      <article class="cajaChica">
+        <h2>Titulo</h2>
+        <p>Este ejemplo fue copiado y despues manipulado desde <a href="https://www.w3schools.com/tags/tag_article.asp">Esta liga</a></p>
+      </article>
+    </article>
+    
+<h2>aside - aparte</h2>
+<p>Como su nombre lo sugiere, esta etiqueta sirve para crear una division semantica en la cual se incorpore informacion indirectamente relacionada 
+    al resto del texto. Ejemplo:
+</p>
+<p>La clase de construccion de software y toma de decisiones nos enseña aspectos basicos y avanzados de la programacion</p>
+<aside><p>La programacion requiere de una estructura semantica precisa para funcionar</p></aside>
+
+<h2>footer - Pie de pagina</h2>
+<p>El footer funciona como un pie de pagina, en este se pueden anexar referencias, etc. Este elemento funciona en bloque. Ejemplo:
+</p>
+<footer>
+    <p>Referenicas: Dr. Octavio Navarro Hinojosa | <a href="https://experiencia21.tec.mx/courses/350633/users/2535">Link Canvas</a> |</p>
+</footer>
+<h2>nav - navegacion</h2>
+<p>La intencion de nav es poder crear un bloque de links de navegacion para tenerlos agrupados
+    en un mismo lugar. Sin embargo, no es necesario que todos los links esten aqui presentes. Ejemplo:
+</p>
+<nav><p>
+    <a href="https://www.youtube.com/watch?v=5jLLLwaAqFY">Entra bajo tu propio riesgo</a> |
+    <a href="https://www.youtube.com/watch?v=QVo4F7eD3g4">Entra bajo tu propio riego 2</a>
+</p></nav>
+<h2>img - imagen</h2>
+<p>Este tag sirve para linkear una imagen an un archivo html. Ejemplo: </p>
+<img src="rhcp_0.jpg" alt="Red_Hot_Chili_Peppers" width="500" height="309">
+<h2>br - salto de linea</h2>
+<p>Tal y como se indica arriba, esta etiqueta produce un salto de linea dentro de un parrafo. Ejemplo:</p>
+<br>
+<p>Sometimes I feel like I don't have a partner <br>
+    Sometimes I feel like my only friend <br>
+    Is the city I live in, the city of angels <br>
+    Lonely as I am, together we cry</p>
+<p><em>Under the Bridge - Red Hot Chili Peppers</em></p>
+
+<h2>hr - cambio de tema</h2>
+<p>Esta etiqueta sirve para crear una linea horizontal a lo ancho de la pagina. Esta linea representa un cambio de tema dentro del documento. Ejemplo:</p>
+<p>Artistas como Giorgio Moroder, Daft Punk o Tyler the Creator han ganado mucha popularidad en los ultimos
+    años debido a que han roto el concepto general que se tenia sobre la musica, creando estilos unicos y diferentes.
+</p>
+<hr>
+<p>El cine es una forma de arte sujeta a la interpretacion del publico, haciendola de esta manera una forma de expresion.</p>
+<h2>form - input form</h2>
+<p>Basicamente esta etiqueta sirve para crear un input dentro de la pagina. En esta el usuario podra ingresar datos que posteriormente seran almacenados si el codigo asi lo permite. Ejemplo:</p>
+<br>
+<form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido"><br><br>
+</form>
+<p>A estas cajas de texto se les podria escribir informacion y crear un boton "Subtmit" para enviar el contenido a una base de datos</p>
+<h2>table - tabla</h2>
+<p>El tag "table" crea una tabla dentro del documento html. Esta tabla consiste de tr, th y td, asociados a los headers, columnas y filas. Ejemplo:
+</p>
+<table>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<h3>Juegos Mas vendidos por desarrollador</h3>
+<table>
+    <tr>
+        <th>Desarrollador</th>
+        <th>Nombre del juego</th>
+        <th>Año de lanzamiento</th>
+        <th>Copias Vendidas</th>
+    </tr>
+    <tr>
+        <td>Ubisoft</td>
+        <td>Far Cry 5 </td>
+        <td>2018</td>
+        <td>25 millones</td>
+    </tr>
+    <tr>
+        <td>Electronic Arts</td>
+        <td>Fifa 18</td>
+        <td>2017</td>
+        <td>24 millones</td>
+    </tr>
+    <tr>
+        <td>Bethesda</td>
+        <td>The Elder Scrolls V</td>
+        <td>2016</td>
+        <td>30 millones</td>
+    </tr>
+</table>
+</table>
+
+<h2>ul - unordered list</h2>
+<p>Este tag funciona para crear una lista dentro de un documento html. Este tiene que ser usado con el tag "li" para crear cada viñeta. Ejemplo:</p>
+<h4>Lista del super</h4>
+<ul>
+    <li>Crema de cacahuate: 800g</li>
+    <li>Pollo: 1.5kg</li>
+    <li>Arrachera de res: 1.5kg</li>
+    <li>Brocoli: 1 bolsa</li>
+    <li>Espinaca: 1 bolsa</li>
+</ul>
+<h2>ol - ordered list</h2>
+<p>Este tag funciona para crear una lista ordenada, a diferencia del tag anterior. Ambos tags pueden ser formateados con CSS y aqui esta un ejemplo de como funciona este tipo de lista:</p>
+<h4>Rutina gimnasio</h4>
+<ol>
+    <li>Press Banca inclinado 15 X 4</li>
+    <li>Lagartijas 50 X 4</li>
+    <li>Press Banca Horizontal 8 X 4</li>
+    <li>Cristos inclinados 15 X 4</li>
+</ol>
