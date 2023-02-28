@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/CSS/CSS_Cheat_Sheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>CSS Cheat Sheet</h1>
+    </div>
+    <div class="subheader">
+        <h2>Border</h2>
+    </div>
+    <p>La propiedad "border" funciona para crear un borde alrededor de una "caja" de texto.
+        A estos bordes se les pueden aplicar estilos predeterminados o crear los propios estilos. Ejemplo:
+    </p>
+    <div class="border-green">Ejemplo de caja de texto verde</div>
+    
+    <p>
+        <div class="border-pred">Ejemplo de caja predeterminada</div>
+    </p>
+    <p>
+        <div class="border-inset">Ejemplo de caja predeterminada</div>
+    </p>
+    </div>
+    <div class="subheader">
+        <h2>border-left, top, left, bottom</h2>
+    </div>
+    <p>Esta propiedad tiene la misma funcion que la propiedad de arriba, la unica diferencia
+        es que funciona para crear un borde en un lado especifico de la caja.
+        Ejemplo:
+    </p>
+    <hr>
+    <div class="left-border">Ejemplo de left border</div>
+    <hr>
+    <div class="right-border"><p>Ejemplo de Right border</p></div>
+    <hr>
+    <div class="top-border"><p>Ejemplo top border</p></div>
+    <hr>
+    <div class="bottom-border"><p>Ejemplo de bottom border</p></div>
+    <hr>
+    <div class="subheader">
+        <h2>border radius</h2>
+    </div>
+    <p>La propiedad "border radius" sirve para darle curvatura a un borde y de esta manera
+        eliminar las esquinas cuadradas. Cada borde se puede alterar de manera individual.
+        Ejemplo:
+    </p>
+    <div id="redondo">
+        <h3>
+            <p>-</p>
+            <p>Bordes redondeados</p>
+            <p>Aplicando los siguientes parametros:</p>
+            <p>border-radius: 10% 30% 50% 70%;</p>
+            <p>-</p>
+        </h3>
+    </div>
+    <div class="subheader">
+        <h2>background-image</h2>
+    </div>
+    <p>Esta propiedad sirve para tal cual como el nombre dice, agregar una imagen de fondo al documento. Ejemplo: </p>
+    <div class="ajolotes"><p>.</p>.<p>.</p>.<p>.</p>. <p>.</p>.<p></p>.</div>
+    <div class="subheader">
+        <h2>color</h2>
+    </div>
+    <p>La propiedad "color" sirve para cambiar el color de cualquier elemento de texto como parrafos o headers. Ejemplo:
+    </p>
+    <div id="azul">Ejemplo de color de texto azul</div>
+    <div class="subheader">
+        <h2>font</h2>
+    </div>
+    <p>Este elemento sirve para cambiar la tipografia o fuente de un parrafo o encabezado. Ejemplo:</p>
+    <div class="fuente">Yo sere pobre, pero un refresco de marca Aurrera no me lo tomo. 
+        <div id="right-align">-Frases que Luis Miguel nunca dijo</div></div>
+    <div class="subheader">
+        <h2>font-family</h2>
+    </div>
+    <p>Basicamente este elemento sirve para tomar una estilo de fuente generico y aplicarlo a un texto. Ejemplo:</p>
+    <div class="serif-font">Aqui tenemos un ejemplo de esta fuente de texto en accion <p>El nombre de esta fuente es <i>Serif</i></p></div>
+    <div class="subheader">
+        <h2>font-style, weight</h2>
+    </div>
+    <p>font-weight sirve para elegir el peso del color del texto y por el otro lado font-style para dar un estilo, como italica por ejemplo. Ejemplo:</p>
+    <div class="italic">Aqui tenemos un ejemplo de italic con 900 de grosor</div>
+    <div class="subheader">
+        <h2>width, height</h2>
+    </div>
+    <p>Estos elementos sirven para controlar el ancho y el alto de una caja, por ejemplo. Ejemplo:</p>
+    <div class="caja">caja</div>
+    <div class="subheader">
+        <h2>list style</h2>
+    </div>
+    <p>Este comando sirve para dar formato a una lista y sus viñetas. Ejemplo:
+    </p>
+    <div>Ejemplo lista: <ul class="s">Lista desordenada</ul>
+        <li>Tenemos viñetas circulares</li>
+    </div>
+    <div class="subheader">
+        <h2>margin</h2>
+    </div>
+    <p>Este elemento sirve para crear margenes dentro del body del documento
+        o grid en caso de ser existentes.
+    </p>
+    <div class="caja2"><p>.</p>. <p>.</p>.</div>
+    <div class="subheader">
+        <h2>padding</h2>
+    </div>
+    <p>El padding funciona como el margin, solo que con la diferencia de crear los bordes
+        hacia afuera de la caja o elemento a utilizar. Ejemplo:
+    </p>
+    <div class="padding">Este texto tiene un padding que le permite estar separado del resto de datos dentro del documento</div>
+    <div class="subheader">
+        <h2>Overflow</h2>
+    </div>
+    <p>Este elemento sirve para poder ocultar texto sobrante dentro de una caja, la cual puede darse formato para que exist un scroll como en el siguiente ejemplo</p>
+    <div class="overflow">Esta caja de texto puede tener una cantidad muy grande de datos. Por esto se puede scrollear para seguir leyendo y ocultar informacion
+        de la pagina principal que posiblemente no todos quieran leer. Sigue deslizando para poder continuar leyendo que por lo contrario
+        esta informacion no se vera en pantalla
+    </div>
+    <div class="subheader">
+        <h2>Display</h2>
+    </div>
+    <p>Este comando sirve para poder mostrar diferentes tipos de elementos en pantalla siguiendo diferentes modalidades, como elementos reescalables
+        segun el tamaño de pantalla, etc. Ejemplo
+    </p>
+    <div class = "grid-container"> 
+        <div id="small-box2" class = "grid-item">Item 1 </div>
+    </div>
+    <div class="subheader">
+        <h2>Position</h2>
+    </div>
+    <p>Este elemento sirve para dar una posicion definida a una caja, etc. Ejemplo de posicion relativa:</p>
+    <div class="caja3">caja</div>
+    <div class="subheader">
+        <h2>filter</h2>
+    </div>
+    <p>Este elemento sirve para hacer cambios visuales en diferentes elementos. Ejemplo</p>
+    <div id="filter" class="ajolotes"><p>.</p>.<p>.</p>.<p>.</p>. <p>.</p>.<p></p>.</div>
+</body>
+</html>
