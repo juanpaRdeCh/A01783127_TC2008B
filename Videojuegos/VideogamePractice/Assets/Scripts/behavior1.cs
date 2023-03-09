@@ -27,6 +27,9 @@ public class behavior1 : MonoBehaviour
         //Create a copy of the prefab
         GameObject obj = Instantiate(ball, pos, Quaternion.identity);
         //Doom the object to die in 5 seconds
-        Destroy(obj, 5);
+        //Destroy(obj, 5);
+    }
+    public void StopBalls(){
+        CancelInvoke("DropBall");
     }
 }
