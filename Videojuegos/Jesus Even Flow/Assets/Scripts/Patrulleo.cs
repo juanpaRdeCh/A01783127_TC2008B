@@ -6,6 +6,8 @@ public class Patrulleo : MonoBehaviour
 {
     [SerializeField] float amplitude;
     [SerializeField] float speed;
+    [SerializeField] SpriteRenderer sprite;
+
 
     Vector3 initiaPosition;
     Vector3 offset;
@@ -22,5 +24,12 @@ public class Patrulleo : MonoBehaviour
         angle += speed * Time.deltaTime;
         offset = new Vector3(Mathf.Sin(angle) * amplitude, 0, 0);
         transform.position = initiaPosition + offset;
+        
+        if(Mathf.Sin(angle) < -0.999){
+        sprite.flipX = false;
+        }
+        else if (Mathf.Sin(angle) > 0.999){
+            sprite.flipX = true;
+        }
     }
 }

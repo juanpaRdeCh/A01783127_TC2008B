@@ -6,11 +6,17 @@ using TMPro;
 public class Score : MonoBehaviour
 {
     [SerializeField] TMP_Text tmpObj;
+    [SerializeField] int maxScore;
+    [SerializeField] Point creator;
+    public GameObject winner;
+
     int score;
 
     // Start is called before the first frame update
     void Start()
     {
+        winner.SetActive(false);
+
         // creator = GetComponent...
         score = 0;
     }
@@ -21,6 +27,12 @@ public class Score : MonoBehaviour
         score += amount;
         tmpObj.text = "Score:" + score;
         Debug.Log("New score: " + score);
+
+        if (score == maxScore){
+
+            winner.SetActive(true);
+
+         }
 
     }
     

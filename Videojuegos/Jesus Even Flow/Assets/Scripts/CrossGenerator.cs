@@ -24,7 +24,7 @@ public class CrossGenerator : MonoBehaviour
     void NewCross()
     {
 
-        Vector3 pos = new Vector3(Random.Range(-30.0f, 30.0f), 25, 0);
+        Vector3 pos = new Vector3(Random.Range(-30.0f, 30.0f), 40, 0);
         //Create a copy of the prefab
         GameObject obj = Instantiate(CorssParent, pos, Quaternion.identity);
         //Doom the object to die in 5 seconds
