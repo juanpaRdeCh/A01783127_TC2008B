@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../CSS/eventos_dom.css">
+    <script type="module" src="../js/eventos_dom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Eventos y Dom</title>
+</head>
+
+<body>
+    <h1>Eventos y DOM y ChatGPT</h1>
+
+    <div class="container">
+        <h2>Instrucciones</h2>
+        <p>Utiliza ChatGPT y github Copilot para resolver la siguiente actividad. Antes de hacer los ejercicios, contesta las siguientes preguntas. Pregúntale a ChatGPT las preguntas, y verifica que lo que haya generado es correcto. Cuando sea necesario, agrega un ejemplo de código. Incluye una fuente que valide o invalide lo que generó. Agrega elementos de HTML con tus respuestas. (<b>Protip</b>: usa ChatGPT para que las respuestas las ponga directamente en elementos de html.)</p>
+
+        <p>Terminando las preguntas y los ejercicios, documenta tu experiencia con las herramientas en la sección de conclusiones. </p>
+    </div>
+
+    <div class="container">
+        <h3>Preguntas</h3>
+        <ol>
+            <li>¿Qué es el DOM?</li>
+            <p>Copilot: Es la representacion de un documento HTML en forma de arbol, donde cada nodo es un elemento HTML</p>
+            <p>ChatGPT: (resumido) El DOM (Document Object Model) es una representación en forma de árbol de un documento HTML o XML. Es una interfaz de programación de aplicaciones (API) que permite a los desarrolladores manipular el contenido y la estructura de un documento web de forma dinámica.</p>
+            <li>¿Qué es un nodo?</li>
+            <p>Copilot: Es un elemento HTML</p>
+            <p>ChatGpt: (resumido) En el contexto de la programación y la informática, un nodo es un elemento básico de una estructura de datos que representa una unidad de información. En términos simples, un nodo es un objeto que contiene información y una o más referencias a otros objetos similares.</p>
+            <li>¿Cómo se accede a un elemento del DOM?</li>
+            <p>Copilot: Mediante el metodo getElementById()</p>
+            <p>ChatGPT: (resumido) Para acceder a un elemento del DOM, primero debemos identificar el elemento específico que queremos manipular. Esto puede hacerse utilizando métodos como getElementById(), getElementsByClassName(), getElementsByTagName(), o querySelector(). Cada uno de estos métodos acepta un selector que identifica el elemento o elementos que se desean acceder. </p>
+            <li>¿Cómo se modifica un elemento del DOM?</li>
+            <p>Copilot: Mediante el metodo innerHTML</p>
+            <p>ChatGPT: (resumido) Para modificar un elemento del DOM, primero debemos acceder a él utilizando uno de los métodos para acceder al DOM que mencioné en mi respuesta anterior. Una vez que hemos accedido al elemento deseado, podemos modificar sus propiedades y atributos utilizando JavaScript.
+
+                Por ejemplo, para cambiar el contenido de un elemento, podemos utilizar la propiedad innerHTML. Si queremos cambiar el contenido de un elemento con el id "mi-elemento", podemos hacerlo de la siguiente manera:</p>
+            <li>¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
+            <p>Copilot: getElementById() devuelve un elemento, querySelector() devuelve una lista de elementos</p>
+            <p>ChatGPT: (resumido): En resumen, los métodos getElementby* son más rápidos y simples de usar, pero limitados en cuanto a la precisión de selección. Los métodos querySelector* son más flexibles y precisos, pero pueden ser más lentos y complejos de utilizar en algunos casos. </p> 
+            <li>¿Qué es un evento?</li>
+            <p>Copilot: Es una accion que se produce en un elemento HTML
+            <p>ChatGPT: (resumido) En programación web, un evento es una acción que ocurre en la página web y que puede ser detectada y manejada por JavaScript. Algunos ejemplos de eventos comunes en la web incluyen el clic en un botón, la carga de una página, el envío de un formulario, la entrada del cursor en un elemento y la salida del cursor de un elemento.</p>
+            <li>¿Qué es un listener?</li>
+            <P>Copilot: Es una funcion que se ejecuta cuando se produce un evento</P>
+            <p>ChatGPT (resumido) En programación web, un listener (o "escucha" en español) es una función que se utiliza para detectar y responder a eventos en la página web. Los listeners se agregan a los elementos del DOM utilizando los métodos addEventListener() o attachEvent() (en versiones antiguas de Internet Explorer), y se ejecutan automáticamente cuando se produce el evento asociado.</p>
+            <li>¿Qué es un callback?</li>
+            <p>Copilot: Es una funcion que se pasa como parametro a otra funcion</p>
+            <p>ChatGPT: (resumido) En programación, un callback (o "llamada de vuelta" en español) es una función que se pasa como argumento a otra función, y que se ejecuta después de que la función principal haya terminado de ejecutarse. El propósito del callback es permitir que la función principal pueda realizar una tarea asincrónica y notificar al llamador cuando se complete la tarea.</p>
+            <li>¿Qué es un objeto de evento?</li>
+            <p>Copilot: Es un objeto que se pasa como parametro a la funcion callback</p>
+            <p>ChatGPT: (resumido) En programación web, un objeto de evento es un objeto que se crea automáticamente cuando se produce un evento en la página web, y que contiene información sobre el evento, como el tipo de evento, el elemento que lo originó, y cualquier información adicional que pueda ser relevante para el evento en cuestión.</p>
+        </ol>        
+    </div>
+
+    <h3>Ejercicios de código</h3>
+    <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
+
+    <div class="container">
+        <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
+        <p id="mousePosition">Posición del mouse: </p>
+        <div id="position"></div>
+    </div>
+
+    <div class="container">
+        <label for="nombre">Nombre:</label>
+	    <input type="text" id="nombre"><br>
+
+	    <label for="apellido">Apellido:</label>
+	    <input type="text" id="apellido"><br>
+        <p></p>
+	    <button id="guardar">Guardar</button>
+	    <button id="mostrar">Pegar</button>
+
+    </div>
+    
+    <div class="container">
+        <p>3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón correspondiente.</p>
+        <table id="sampleTable">
+            <tr>
+              <td>Row 1 column 1</td>
+              <td>Row 1 column 2</td>
+            </tr>
+            <tr>
+              <td>Row 2 column 1</td>
+              <td>Row 2 column 2</td>
+            </tr>
+          </table>
+          
+          <input id="btn-insert-r" type="button" value="Insert row">
+          <input id="btn-insert-c" type="button" value="Insert column">
+    </div>
+
+    <div class="container">
+        <p>4. Incluye dos cajas de input, para solicitar al usuario la posición de la fila y columna de la siguiente tabla, y otra para solicitar un texto. Al apretar el botón, actualiza el contenido de esa tabla en la posición que solicitaste, con la cadena de texto que solicitaste.</p>
+        <table id="myTable">
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+                <td>Row1 cell3</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+                <td>Row2 cell3</td>
+            </tr>
+            <tr>
+                <td>Row3 cell1</td>
+                <td>Row3 cell2</td>
+                <td>Row3 cell3</td>
+            </tr>
+            </table><form><br>
+            <input id="rowIndex" type="text" placeholder="Row Index">
+            <input id="colIndex" type="text" placeholder="Col Index">
+            <input id="newValue" type="text" placeholder="New Value">
+            <input id="btn-change" type="button" value="Change content">
+    </div>
+
+    <div class="container">
+        <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser aleatorios.</p>
+        <form>
+            <select id="colorSelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input id="btn-add-color" type="button" value="Add color">
+            <input id="btn-rmv-color" type="button" value="Remove color">
+        </form>
+    </div>
+
+    <div class="container">
+        <p>6. Al poner el mouse encima de la siguiente imagen, genera dos números aleatorios entre 300 y 600 para el width y height de una imagen. Reemplaza la imagen de placeholder por otra similar con el tamaño random que generaste. El evento solo se dispara cuando el mouse entra en la imagen.</p>
+        <img id="imagenGato" src="http://placekitten.com/200/300">
+    </div>
+
+    <div class="container">
+        <h2>Conclusiones</h2>
+
+        <h4>Experiencia general</h4>
+        <p>Hasta el momento he tenido buenas experiencias a través de ChatGPT y experiencias variadas con Copilot.
+            Chatgpt me ha ayudado a entender mejor los conceptos de programación y a resolver algunos ejercicios que no entendía debido a que le puedo preguntar
+            que es lo que no entiendo y me lo explica de una manera muy clara. Copilot por otro lado me ayuda cuando estoy atorado en una parte del programa ya que puede predecir 
+            lo que voy a hacer en base a lo que he escrito antes. 
+        </p>
+        <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
+        <p>ChatGPT lo usaría cuando quiero ahorrar tiempo en algun fragmento de programa que quiero escibir. También lo usaría
+            para resolver dudas en fragmentos de código que no entiendo ya que me ahorra muchísimo tiempo de investigación. Copilot lo usaría para apoyarme en tiempo real al momento de estar programando
+            para de esta manera poder agilizar mi trabajo.
+        </p>
+        <h4>Ventajas de usar AI para programar</h4>
+        <p>La mayor ventaja de usar AI para programar es el ahorro de tiempo que se tiene. A pesar de esto existen otras ventajas 
+            como una mejor comprensión del código en el momento en el que el IA te lo explica. Realmente es muy efectivo y ayuda a mejorar las habilidades del 
+            programador de manera rápida.
+        </p>
+        <h4>Desventajas de usar AI para programar</h4>
+        <p>La mayor desventaja es que puede hacer al programador dependiente de esta herramienta. Otro problema es que luego puede crear código invalido o poco optimizado.</p>
+    </div>
+
+</body>
+</html>
