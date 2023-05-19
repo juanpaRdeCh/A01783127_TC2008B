@@ -1,0 +1,12 @@
+<Module> ::= defmodule <ModName> do /n <content> /n end | defmodule <ModName>.<NestName> do <content>/n end
+<ModName> ::= <UpperCase=><validVarName>
+<NestName> ::= <UpperCase=><validVarName>
+<content> ::= Null | <Function>
+
+<Function> ::= def <validVarName>(<ValidArgName>) do /n <FuncCont> /n end
+
+<FuncCont>::= 
+
+
+
+
