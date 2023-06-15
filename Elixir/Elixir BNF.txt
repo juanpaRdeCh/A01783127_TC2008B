@@ -1,12 +1,54 @@
-<Module> ::= defmodule <ModName> do /n <content> /n end | defmodule <ModName>.<NestName> do <content>/n end
-<ModName> ::= <UpperCase=><validVarName>
-<NestName> ::= <UpperCase=><validVarName>
-<content> ::= Null | <Function>
+
+
+
+
+
+
+
+
+
+<Module> ::= defmodule <ModNames> do <functions> end
+
+<ModNames> ::= <UpperCaseChar><validVarName> ] <UpperCaseChar><validVarName> .<Modnames>
+
+<Function> ::= def <validVarName>(<validArgName>) do <expressions> end
+
+<expressions> ::= <expression> | <expression> <expressions>
+
 
 <Function> ::= def <validVarName>(<ValidArgName>) do /n <FuncCont> /n end
 
 <FuncCont>::= 
 
+
+
+
+recursiva para argumentos
+
+llave que se repite
+corchete opcional
+
+
+BNF for C++ Switch Case
+
+<switchCase> ::= switch (<int-variable>) { <cases> } | switch (<variable>) { <cases> <default> }
+
+<int-variable> ::= <validVarName>
+
+<cases> ::= <case> | <case> <cases> 
+
+<case> ::= case <int> : <code> break; | case <char> : <code> break; | case <char> : <code> | case <int> : <code> 
+
+<default> default: <code> | default: <code> break;
+
+
+EBNF for C++ Switch Case
+
+SWITCHCASE ::= 'switch' '(' INT-VARIABLE ')' '{' [{CASE}] [DEFAULT] '}'
+
+CASE ::= 'case' (CHAR | INT) ':' [CODE] ['break;']
+
+DEFAULT ::= 'default' ':' CODE
 
 
 
