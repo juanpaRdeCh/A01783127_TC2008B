@@ -37,7 +37,7 @@ El resultado de la suma de todos los valores es: 838596693105
 ```
 ## Ejecución
 
-Para correr el programa se debe de tener instalado elixir y se debe de correr el siguiente comando en la terminal:
+Para correr el programa se debe de tener instalado elixir y se debe de correr el siguiente comando en la terminal de gitbash en la ruta donde se encuentre el archivo:
 
 ```elixir
 $ iex.bat threading3.ex
